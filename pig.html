@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>고기를알아보자</title>
+        <!--초기화-->
+        <style>
+            * { margin: 0; padding: 0;}
+            body { 
+                font-family: sans-serif;
+                background: rgb(37, 35, 42);
+            }
+            a { text-decoration: none;}
+            img { border: 0;}
+            li { list-style: none;}
+            ::-webkit-scrollbar { display: none; }
+        </style>
+        <!-- h1 -->
+        <style>
+            h1 { 
+                text-align: center;
+                margin-top: 2%;
+                margin-bottom: -1%;
+                color: white;
+            }
+            h2 {
+                float: left;
+                overflow: hidden;
+                clear: both;color: rgb(214, 185, 16);
+                text-align: center;
+                margin: 3%;
+                color: rgb(214, 185, 16);
+            }
+            p {
+                margin-top: 30px;
+            }
+        </style>
+        <!--로고-->
+        <style>
+            #logo {
+                overflow: hidden;
+                float: left;
+                transition: all 0.1s linear;
+                width: 10%;
+                margin: 15px;
+                margin-top: 1%;
+                margin-left: 45%;
+            }
+            #logo:hover { 
+                transform: scale(1.1);
+                filter: drop-shadow(10px 10px 10px black);
+            }
+        </style>
+        <!--소-->
+        <style>
+            #cow {
+                overflow: hidden;
+                clear: both;
+                float: left;
+            }
+            #cow_meat {
+                margin-left: 20px;
+                margin-top: 10px;
+                width: 1490px;
+                height: 570px;
+                margin-bottom: 10%;
+
+                background: rgb(20, 20, 36);
+                border-top: 5px solid rgb(214, 185, 16);
+                border-bottom: 5px solid rgb(214, 185, 16);
+                border-radius: 50px;
+
+                color: rgb(214, 185, 16);
+
+            }
+            
+            #h_pig {
+                position: static;
+                float: right;
+                margin-top: -650px;
+                margin-right: 150px;
+            }
+        </style>
+        <!-- 고기 -->
+        <style>
+            .galbi {
+                clear: both;
+                position: absolute;
+                margin: 6%;
+            }
+            .back {
+                clear: both;
+                position: absolute;
+                margin: 5%;
+            }
+            .dung {
+                clear: both;
+                position: absolute;
+                margin: 5%;
+            }
+            .mok {
+                clear: both;
+                position: absolute;
+                margin: 5%;
+            }
+            .satae {
+                clear: both;
+                position: absolute;
+                margin: 5%;
+            }
+            .sam {
+                clear: both;
+                position: absolute;
+                margin: 8%;
+            }
+            .ann {
+                clear: both;
+                position: absolute;
+                margin: 8%;
+            }
+            .ap {
+                clear: both;
+                position: absolute;
+                margin: 7%;
+            }
+        </style>
+        <!-- 테이블 -->
+        <style>
+            #table {
+                text-align: center;
+
+                margin-bottom: 5%;
+                margin-top: 20px;
+
+                width: 1540px;
+                border-collapse: collapse;
+
+                border: groove 10px gold;
+            }
+            td {
+                font-size: 150%;
+                font-weight: bold;
+                -webkit-text-stroke: 1px gold;
+            }
+            a:link {
+                color: gray;
+                -webkit-text-stroke: 1px white;
+            }
+            a:visited {
+                color: black;  
+                -webkit-text-stroke: 1px gold;
+            }
+
+        </style>
+        <!-- space -->
+        <style>
+            .space { margin-bottom: 3%;}
+        </style>
+        <!-- test -->
+        <style>
+            #meat_h {
+                float: right;
+                clear: both;
+                position: static;
+                margin-top: -650px;
+                margin-right: 150px;
+                filter: drop-shadow(1px 1px 15px red) ;
+            }
+        </style>
+        <!-- leolbi -->
+        <style>
+            #leolbi {
+                width: 1540px; height: 200px;
+            }
+        </style>
+        <!-- top -->
+        <style>
+            #top {
+                position: fixed;
+                overflow: hidden;
+                text-align: center;
+                float: right;
+                margin-left: 1500px;
+                margin-top: 620px;
+                color: black;
+                width: 30px; height: 25px;
+                background: rgb(20, 20, 36);
+                border: 1px solid gold;
+            }
+            #top:hover {
+                background: white;
+                -webkit-text-stroke: 1px black;
+            }
+        </style>
+        <!-- music -->
+        <style>
+            #music {
+                float: left;
+                position: fixed;
+                margin-top: 664px;
+                border: 1px solid gold;
+                border-radius: 50px;
+            }
+            audio::-webkit-media-controls-panel {
+                background-color: rgb(37, 35, 42);
+            }
+            audio::-webkit-media-controls-current-time-display,
+            audio::-webkit-media-controls-time-remaining-display {
+                color: gold
+            }
+        </style>
+         <body>
+            <div id="leolbi">
+                <audio src="C:\Users\HP\Desktop\Meat\ema.mp3" id="music" controls autoplay loop></audio>
+            <header>
+                <a href="C:/Users/HP/Desktop/Meat/meat.html">
+                        <img src="C:\Users\HP\Desktop\Meat\Resource\matzip1.png" alt="#" id="logo">
+                </a>
+                <a name="tp"><div class="space"> 　</div></a>
+            </header>
+            <div id="cow">
+                <h1 id="t_cow">돼지고기</h1>
+                <table border="0" height="400" id="table">
+                    <tr id="table_t">
+                        <td id="t_galbi"><a href="#galbi">갈　비</a></td>
+                        <td id="t_dung"><a href="#back">뒷다리</a></td>
+                        <td><a href="#dung">등　심</a></td>
+                        <td><a href="#mok">목　살</td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="#satae">사　태</a></td>
+                        <td><a href="#sam">삼겹살</a></td>
+                        <td><a href="#ann">안　심</a></td>
+                        <td><a href="#ap">앞다리</a></td>
+                    </tr>
+
+                </table>
+                <a name="galbi"><div class="space"> 　</div></a>
+                <h2>돼지갈비</h2>
+                <ul id="cow_list">
+                    <li id="cow_meat">
+                        <div class="galbi">
+                            <img src="C:\Users\HP\Desktop\Meat\pig\galbi.png" />
+                            <p>소의 갈비뼈와 그 주변부의 살을 의미한다.<br>
+                            </p>
+                        </div>
+                    </li>
+                    <img src="C:\Users\HP\Desktop\Meat\pig\gal1.png" alt="#" id="h_pig">
+                    <img src="C:\Users\HP\Desktop\Meat\pig\gal2.png" alt="#" id="meat_h">
+                </ul>
+                <a name="back"><div class="space"> 　</div></a>
+                <h2>뒷다리</h2>
+                <ul id="cow_list">
+                    <li id="cow_meat">
+                        <div class="back">
+                            <img src="C:\Users\HP\Desktop\Meat\pig\back.png"  />
+                            <p> 등뼈에 붙은 기름기가 많고 연한 고기이다.<br>
+                            </p>
+                        </div>
+                    </li>
+                    <img src="C:\Users\HP\Desktop\Meat\pig\back1.png" alt="#" id="h_pig">
+                    <img src="C:\Users\HP\Desktop\Meat\pig\back2.png" alt="#" id="meat_h">
+                </ul>
+                <a name="dung"><div class="space"> 　</div></a>
+                <h2>등 심</h2>
+                <ul id="cow_list">
+                    <li id="cow_meat">
+                        <div class="dung">
+                            <img src="C:\Users\HP\Desktop\Meat\pig\dung.png"  />
+                            <p>목심은 소의 목덜미 위쪽 부위로<br>
+                            지방 함량이 적고 고기결이 거칠며 육질이 질기다.<br>
+                            </p>
+                        </div>
+                    </li>
+                    <img src="C:\Users\HP\Desktop\Meat\pig\dung1.png" alt="#" id="h_pig">
+                    <img src="C:\Users\HP\Desktop\Meat\pig\dung2.png" alt="#" id="meat_h">
+                </ul>
+                <a name="mok"><div class="space"> 　</div></a>
+                <h2>목 살</h2>
+                <ul id="cow_list">
+                    <li id="cow_meat">
+                        <div class="mok">
+                            <img src="C:\Users\HP\Desktop\Meat\pig\mok.png"  />
+                            <p>소의 오금에 붙은 고기로, 앞다리 또는 뒷다리 부위의 다소 질긴 살이다.<br>
+                            </p>
+                        </div>
+                    </li>
+                    <img src="C:\Users\HP\Desktop\Meat\pig\mok1.png" alt="#" id="h_pig">
+                    <img src="C:\Users\HP\Desktop\Meat\pig\mok2.png" alt="#" id="meat_h">
+                </ul>
+                <a name="satae"><div class="space"> 　</div></a>
+                <h2>사 태</h2>
+                <ul id="cow_list">
+                    <li id="cow_meat">
+                        <div class="satae">
+                            <img src="C:\Users\HP\Desktop\Meat\pig\satae.png"  />
+                            <p>소의 뒷다리 엉치뼈, 넓적다리뼈에서 우둔을 제외한 부위이다.<br>
+                                단백질함량이 높고 지방이 낮다. <br>
+                            </p>
+                        </div>
+                    </li>
+                    <img src="C:\Users\HP\Desktop\Meat\pig\satae1.png" alt="#" id="h_pig">
+                    <img src="C:\Users\HP\Desktop\Meat\pig\satae2.png" alt="#" id="meat_h">
+                </ul>
+                <a name="sam"><div class="space"> 　</div></a>
+                <h2>삼겹살</h2>
+                <ul id="cow_list">
+                    <li id="cow_meat">
+                        <div class="sam">
+                            <img src="C:\Users\HP\Desktop\Meat\pig\sam.png" />
+                            <p>소의 갈비뼈와 그 주변부의 살을 의미한다.<br>
+                            </p>
+                        </div>
+                    </li>
+                    <img src="C:\Users\HP\Desktop\Meat\pig\sam1.png" alt="#" id="h_pig">
+                    <img src="C:\Users\HP\Desktop\Meat\pig\sam2.png" alt="#" id="meat_h">
+                </ul>
+                <a name="ann"><div class="space"> 　</div></a>
+                <h2>안 심</h2>
+                <ul id="cow_list">
+                    <li id="cow_meat">
+                        <div class="ann">
+                            <img src="C:\Users\HP\Desktop\Meat\pig\ann.png"  />
+                            <p> 등뼈에 붙은 기름기가 많고 연한 고기이다.<br>
+                            </p>
+                        </div>
+                    </li>
+                    <img src="C:\Users\HP\Desktop\Meat\pig\ann1.png" alt="#" id="h_pig">
+                    <img src="C:\Users\HP\Desktop\Meat\pig\ann2.png" alt="#" id="meat_h">
+                </ul>
+                <a name="ap"><div class="space"> 　</div></a>
+                <h2>앞다리</h2>
+                <ul id="cow_list">
+                    <li id="cow_meat">
+                        <div class="ap">
+                            <img src="C:\Users\HP\Desktop\Meat\pig\ap.png"  />
+                            <p>목심은 소의 목덜미 위쪽 부위로<br>
+                            지방 함량이 적고 고기결이 거칠며 육질이 질기다.<br>
+                            </p>
+                        </div>
+                    </li>
+                    <img src="C:\Users\HP\Desktop\Meat\pig\ap1.png" alt="#" id="h_pig">
+                    <img src="C:\Users\HP\Desktop\Meat\pig\ap2.png" alt="#" id="meat_h">
+                </ul>
+            </div>
+            <div id="top">
+                <a href="#tp">Top</a>
+            </div>
+        </div>
+         </body>
